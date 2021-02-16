@@ -79,11 +79,10 @@
             {% if site.author.email %}
               <!-- Email -->
               <li class="navigation__item">
-                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-                  <!--<i class="icon icon-mail"></i>-->
-                  <i class="fas fa-envelope fa-lg"></i>
-                  <span class="label">Email</span>
-                </a>
+        <a  href="mailto:?subject={{ page.title }}&amp;body=Check out this site {{ site.url }}{{ site.baseurl }}{{ page.url }}"
+            title="Share via Email" >
+            <i class="fa fa-envelope share-button"> email</i>
+        </a>
               </li>
             {% endif %}
 

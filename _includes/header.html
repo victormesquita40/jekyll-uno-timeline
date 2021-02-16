@@ -57,12 +57,14 @@
             {% if site.author.github_username %}
               <!-- GitHub -->
               <li class="navigation__item">
- <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
+         <a  href="https://github.com/new/import?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
             onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
             title="Link of GitHub" >
-            <i class="fa fa-linkedin share-button"> github</i>
+            <i class="fa fa-github share-button">github</i>
         </a>
 
+
+              </li>
             {% endif %}
 
             {% if site.author.meetup_name %}

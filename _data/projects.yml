@@ -1,7 +1,7 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: DFA: Detrended Fluctuation Analysis
+- name: DFA Detrended Fluctuation Analysis
   gh_user: victormesquita40
   repo: package
   img: https://user-images.githubusercontent.com/54644227/108104832-8bd88800-706a-11eb-9e58-96105c661652.jpg

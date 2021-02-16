@@ -3,11 +3,12 @@
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
 - name: DFA: Detrended Fluctuation Analysis
   gh_user: victormesquita40
-  repo: DFA: Detrended Fluctuation Analysis
+  repo: package
   img: https://user-images.githubusercontent.com/54644227/108104832-8bd88800-706a-11eb-9e58-96105c661652.jpg
   desc: A r-package which allows make many analysis in nonstationary time series, which contains the principals functions of the area.
  
- gh_user: tzuehlke
+- name: Jekyll Theme
+  gh_user: tzuehlke
   repo: jekyll-uno-timeline
   img: https://raw.githubusercontent.com/tzuehlke/jekyll-uno-timeline/master/screenshot-overview.png
   desc: This Jekyll Theme. Based on the Uno-Theme with a list of projects as timeline. Like a business card.

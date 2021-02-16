@@ -24,32 +24,33 @@
             {% if site.author.twitter_username %}
               <!-- Twitter -->
               <li class="navigation__item">
-                <a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
-                  <!--<i class="icon icon-social-twitter"></i>-->
-                  <i class="fab fa-twitter fa-lg"></i>
-                  <span class="label">Twitter</span>
-                </a>
+          <a  href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+            title="Share on Twitter" >
+            <i class="fa fa-twitter share-button"> twitter</i>
+        </a>
               </li>
             {% endif %}
 
             {% if site.author.facebook_username %}
               <!-- Facebook -->
               <li class="navigation__item">
-                <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
-                  <i class="icon icon-social-facebook"></i>
-                  <span class="label">Facebook</span>
-                </a>
+        <a  href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+            title="Share on Facebook" >
+            <i class="fa fa-facebook-official share-button"> facebook</i>
+        </a>
               </li>
             {% endif %}
 
             {% if site.author.linkedin_username %}
               <!-- LinkedIn -->
               <li class="navigation__item">
-                <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
-                  <!--<i class="icon icon-social-linkedin"></i>-->
-                  <i class="fab fa-linkedin fa-lg"></i>
-                  <span class="label">LinkedIn</span>
-                </a>
+        <a  href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.title }}"
+            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+            title="Share on LinkedIn" >
+            <i class="fa fa-linkedin share-button"> linkedin</i>
+        </a>
               </li>
             {% endif %}
 
